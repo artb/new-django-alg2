@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>Trab Algebra</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        function call_counter(url,pk) {
+            alert("VC E FODA")
+        }
+    </script>
+    <link rel="Stylesheet" href="./css/homepage/styles.css" type="text/css" />
+</head>
+
+<body>
+    <form name="aspnetForm" method="post" action="./" id="aspnetForm">
+
+        <!-- <script type="text/javascript">
+            var theForm = document.forms['aspnetForm'];
+            if (!theForm) {
+                theForm = document.aspnetForm;
+            }
+
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+        </script> -->
+
+        <div>
+
+        </div>
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <h1>
+                        Trabalho de Álgebra 2
+                    </h1>
+                </div>
+                <br />
+            </div>
+            <hr />
+            <div class="clear">
+            </div>
+            <div class="main">
+
+                <div style="text-align: center;">
+                    Insira a matriz na caixa de texto abaixo:<br />
+                    (tamanho máximo de 32x32)
+                    <br />
+                    <textarea id="Textarea1" name="matrix" rows="16" cols="90"></textarea>
+                    <br />
+                    <br />
+                    Os valores são separados por virgulas
+                    <br />
+                    <hr />
+                    <br />
+                    Selecione as opções a serem calculadas:<br />
+                    <br />
+                    <table class="opTable" cellspacing="6" align="center">
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="Transpose" />
+                                Determinante
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Inverse" />
+                                Traço
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Cholesky" />
+                                Transposta
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Cholesky" />
+                                Inversa
+                            </td>     
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="Transpose" />
+                                Polinômio Característico
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Inverse" />
+                                Autovalores
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Cholesky" />
+                                Autovetores
+                            </td>
+                            <td>
+                                <input type="checkbox" name="Cholesky" />
+                                Matriz Diagonal
+                            </td>     
+                        </tr>
+                    </table>
+                    <br />
+                    &nbsp;<input type="submit" name="ctl00$MainContent$calculate" value="Calcular"/>
+                    <br />
+                    <br />
+                </div>
+
+                <button onclick="call_counter('http://www.google.com', 12345);">
+                    I update object 12345
+                </button>
+                <button onclick="call_counter('http://www.yahoo.com', 999);">
+                    I update object 999
+                </button>
+
+            </div>
+            <div class="clear">
+            </div>
+            <br />
+        </div>
+    </form>
+</body>
+
+</html>
