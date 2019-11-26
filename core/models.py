@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 
 class Calculo(models.Model):
-    matriz = models.CharField()
+    matriz = models.CharField(max_length=320)
     determinante = models.BooleanField()
     traco = models.BooleanField()
     transposta = models.BooleanField()

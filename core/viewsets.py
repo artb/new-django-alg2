@@ -1,6 +1,7 @@
+from rest_framework import viewsets
 from rest_framework.viewsets import ModelViewSet
 
-from core import models, serializers
+from . import models, serializers
 
 
 class CalculoViewSet(viewsets.ModelViewSet):
